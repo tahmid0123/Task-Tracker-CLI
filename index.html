@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>welcome</p>
-    <h1>Task Tracker</h1>
-
-    <div class="task-container">
-        <ul class="task-list"></ul>
+    <div class="header">
+        <p>welcome</p>
+        <h1>Task Tracker</h1>
     </div>
-    <input type="text" name="task" id="task" placeholder="Write your task">
-    <p class="error-msg"></p>
-    <button id="add-task">Add Task</button>
+        <div class="main">
+            <div class="add-tasks">
+                <h2>Added Tasks</h2>
+                <div class="task-container">
+                    <ul class="task-list"></ul>
+                </div>
+                <input type="text" name="task" id="task" placeholder="Write your task">
+                <p class="error-msg"></p>
+                <button id="add-task">Add Task</button>
+            </div>
+            
+
+            <div class="task-in-progress">
+                <h2>Task In Progress</h2>
+            </div>
+
+            <div class="completed-tasks">
+                <h2>Completed Tasks</h2>
+            </div>
+        </div>
+    
 
     <script src="script.js"></script>
 </body>
