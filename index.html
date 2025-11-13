@@ -12,25 +12,28 @@
         <h1>Task Tracker</h1>
     </div>
         <div class="main">
-            <div class="add-tasks">
-                <h2>Added Tasks</h2>
-                <div class="task-container">
-                    <ul class="task-list"></ul>
+            <div class="display-container">
+                <div class="add-tasks">
+                    <h2>Added Tasks</h2>
+                    <div class="task-container">
+                        <ul class="task-list"></ul>
+                    </div>
+                    <input class="task-input" type="text" name="task" id="task" placeholder="Write your task">
+                    <p class="error-msg"></p>
+                    <button id="add-task">Add Task</button>
                 </div>
-                <input class="task-input" type="text" name="task" id="task" placeholder="Write your task">
-                <p class="error-msg"></p>
-                <button id="add-task">Add Task</button>
+                
+
+                <div class="task-in-progress">
+                    <h2>Task In Progress</h2>
+                </div>
+
+                <div class="completed-tasks">
+                    <h2>Completed Tasks</h2>
+                    <ul></ul>
+                </div>
             </div>
             
-
-            <div class="task-in-progress">
-                <h2>Task In Progress</h2>
-            </div>
-
-            <div class="completed-tasks">
-                <h2>Completed Tasks</h2>
-                <ul></ul>
-            </div>
         </div>
     
 
