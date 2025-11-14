@@ -3,6 +3,7 @@ const taskContainer = document.querySelector('.task-container');
 const taskListUl = document.querySelector('.task-list')
 const errorMsg = document.querySelector('.error-msg')
 const taskInProgress = document.querySelector('.task-in-progress')
+const completedTask = document.querySelector('.completed-tasks')
 
 addTaskButton.addEventListener('click', () => {
 
@@ -11,6 +12,8 @@ addTaskButton.addEventListener('click', () => {
         
    
     if( taskInputValue != '' ){
+
+        //creating a 3 digits ID
         let threeDigitsId = () => Math.floor(Math.random() * 900);
         let randomId = threeDigitsId();
 
@@ -49,6 +52,14 @@ document.querySelector('.task-list').addEventListener('click', (e) => {
     
 })
 
+document.querySelector('.task-in-progress').addEventListener('click', (e) => {
+    if(e.target.tagName === 'BUTTON'){
+        let btnId = e.target.dataset.id;
+        let parentEl = e.target.parentElement;
 
+        completedTask.appendChild(parentEl)
+        e.target.textContent = 'Completed'
+    }
+})
 
 console.log(taskContainer);
